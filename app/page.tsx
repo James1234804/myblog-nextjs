@@ -49,8 +49,7 @@ export default async function Home() {
 
   return (
     <main>
-      <nav className="flex justify-between items-center px-10 py-4 bg-white shadow">
-        <h1 className="text-xl font-bold">Logo</h1>
+      <nav className="flex justify-between items-center px-10 py-4 bg-white shadow text-black">
         <div className="flex gap-8">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
