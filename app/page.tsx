@@ -28,7 +28,10 @@ const GET_POSTS = `
 async function getPosts() {
   const res = await fetch(process.env.NEXT_PUBLIC_WORDPRESS_API_URL!, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+   headers: { 
+  'Content-Type': 'application/json',
+  'ngrok-skip-browser-warning': 'true'
+},
     body: JSON.stringify({ query: GET_POSTS }),
     next: { revalidate: 60 }
   })
